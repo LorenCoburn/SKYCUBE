@@ -1,0 +1,62 @@
+<style>
+
+
+
+
+
+
+  body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+  }
+
+  .sky_cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 20s infinite linear;
+  }
+
+
+  .sky_cube .face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url(LMC-WEB-\ \(14\).JPG);
+  background-size: cover;
+  border: 0.1 solid #ffffff;
+  opacity: 1.5;
+
+
+}
+
+.sky_cube .front { transform: translateZ(100px); }
+.sky_cube .back { transform: rotateY(180deg) translateZ(100px); }
+.sky_cube .left { transform: rotateY(-90deg) translateZ(100px); }
+.sky_cube .right { transform: rotateY(90deg) translateZ(100px); }
+.sky_cube .top { transform: rotateX(90deg) translateZ(100px); }
+.sky_cube .bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateZ(11.25deg) rotateX(11.25deg) rotateY(22.5deg);
+  }
+  50% {
+    transform: rotateZ(22.5deg) rotateX(22.5deg) rotateY(45deg);
+  }
+  75% {
+    transform: rotateZ(33.75deg) rotateX(33.75deg) rotateY(67.5deg);
+  }
+}
+
+</style>
