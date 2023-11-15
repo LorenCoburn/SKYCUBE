@@ -7,7 +7,8 @@
 
   body {
     background-color: #000;
-    display: flex;
+    background-image: url(LMC_DISC_GRASS.png);
+    display: grid;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -16,8 +17,11 @@
   }
 
   .sky_cube {
-    width: 200px;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate 20s infinite linear;
@@ -30,8 +34,9 @@
   height: 200px;
   background-image: url(LMC-WEB-\ \(14\).JPG);
   background-size: cover;
-  border: 0.1 solid #ffffff;
-  opacity: 1.5;
+  border: 0.2 solid #ffffff;
+  opacity: 1.0;
+
 
 
 }
