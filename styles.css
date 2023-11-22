@@ -1,13 +1,8 @@
-<style>
-
-
-
-
-
-
   body {
-    background-color: #000;
-    background-image: url(LMC_DISC_GRASS.png);
+    background-color:whitesmoke;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -64,4 +59,9 @@
   }
 }
 
-</style>
+
+
+h1 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  align-content: center;
+}
